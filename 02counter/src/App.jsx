@@ -22,8 +22,13 @@ function App() {
   }
   
  
-  const removeValue=()=>{
-     return (setCounter(counter-1))
+  const removeValue = () => {
+    if (counter <= 0) {
+      setCounter(counter = 0)
+    }
+    else {
+      return (setCounter(counter - 1))
+    }
   }
   //problem ui updation
   
