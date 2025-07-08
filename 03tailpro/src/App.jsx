@@ -15,7 +15,7 @@ function App() {
   
   return (
     <>
-      <Card userName="Anish" gmail="Anish@gmail.com" someObj={myObj} newArr={newArr } />
+    <Card userName="Anish" gmail="Anish@gmail.com" someObj={myObj} newArr={newArr } />
     <Card userName="Ram" gmail="Ram@gmail.com"/>
     </>
   )

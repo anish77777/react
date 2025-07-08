@@ -32,6 +32,8 @@ import Github, { githubInfoLoader } from './components/Github/Github.jsx'
 //     ]
 //   }
 // ])
+
+
 //same
 //how to take user id
 const router = createBrowserRouter(
@@ -48,6 +50,8 @@ const router = createBrowserRouter(
     </Route>
   )
 )
+
+
 //loader is used to api call when user move cursor move to a link
 //parameter user id can be accessed in components User
 
