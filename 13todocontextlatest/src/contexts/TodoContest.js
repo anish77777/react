@@ -1,5 +1,6 @@
 import { createContext, useContext } from "react";
 
+// Create a context for todos with default values and empty functions
 export const TodoContext = createContext({
     todos: [
         {
@@ -8,16 +9,17 @@ export const TodoContext = createContext({
             completed: false,
         }
     ],
-    addTodo: (todo) => { },
-    updateTodo: (id, todo) => { },
-    deleteTodo: (id) => { },
-    toggleComplete: (id) => { }
+    addTodo: (todo) => { },           // Function to add a todo
+    updateTodo: (id, todo) => { },    // Function to update a todo
+    deleteTodo: (id) => { },          // Function to delete a todo
+    toggleComplete: (id) => { }       // Function to toggle completion status
 })
 
-
+// Custom hook to use the TodoContext in components
 export const useTodo = () => {
     return useContext(TodoContext)
 }
 
+// Export the Provider for wrapping the app/components
 export const TodoProvider = TodoContext.Provider
-//so we dont have to use TodoContext.Provider
+// This allows you to use <TodoProvider value={...}> instead

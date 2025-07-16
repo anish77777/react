@@ -1,6 +1,6 @@
-export default {
-    darkMode:"class",
+module.exports = {
     plugins: {
-        "@tailwindcss/postcss": {},
-    }
-  }
+        tailwindcss: {},
+        autoprefixer: {},
+    },
+}
