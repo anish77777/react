@@ -1,5 +1,6 @@
 // app/store.js
 import { configureStore } from "@reduxjs/toolkit";
+//core react
 import todoReducer from "../features/todo/todoSlice";
 
 // configureStore wraps Redux's createStore with good defaults:
